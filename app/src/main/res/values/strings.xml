@@ -11,5 +11,15 @@
 
     <string name="check">Check</string>
     <string name="list_complete">Lista completa</string>
-    <string name="scan">Scan</string>
+
+
+    <string name="scan">Escanear</string>
+    <string name="searchBtn"> Pesquisar </string>
+    <string name="tooltip">Pesquise pelo nome ou email no campo abaixo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="successText">Convidado registrado</string>
+    <string name="failureText">Ops, não encontramos o convidado.</string>
+    <string name="loadingText">Aguarde...</string>
+
 </resources>

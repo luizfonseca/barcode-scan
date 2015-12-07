@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/barcode_failure"
+    tools:context="factory9.checkinmobile.BarcodeFailureFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/notok"
+        />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/failureText"
+        android:layout_marginTop="160dp"
+        android:textSize="30sp"
+        android:textColor="#222"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/barcode_result"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+        android:text="@string/searchBtn"
+        />
+</FrameLayout>

@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/barcode_loading"
+    tools:context="factory9.checkinmobile.BarcodeLoadingFragment">
+
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/loadingText"
+        android:layout_marginTop="160dp"
+        android:textSize="30sp"
+        android:textColor="#222"/>
+
+</FrameLayout>

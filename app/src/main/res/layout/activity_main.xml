@@ -3,87 +3,61 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:paddingBottom="@dimen/activity_vertical_margin"
-android:paddingLeft="@dimen/activity_horizontal_margin"
-android:paddingRight="@dimen/activity_horizontal_margin"
 android:paddingTop="@dimen/activity_vertical_margin"
-tools:context="com.app.felipe.checkinmobile.MainActivity">
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+tools:context="factory9.checkinmobile.MainActivity">
 
-<!-- Name layout -->
-<TextView
-    android:id="@+id/name_label"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:text="@string/name_label"
-    />
+<FrameLayout
+    android:id="@+id/frameFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 
-<EditText
-    android:id="@+id/name_content"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:inputType="text"
-    android:layout_below="@+id/name_label"
-    android:layout_alignEnd="@+id/scan_button" />
 
-<!-- Email layout -->
-<TextView
-    android:id="@+id/email_label"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/email_label"
-    android:layout_marginTop="20dp"
-    android:layout_below="@+id/name_content"
-    android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchBtn"
+        android:layout_alignParentBottom="true"
+        style="@style/ScanButton"/>
 
-<EditText
-    android:id="@+id/email_content"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:inputType="textEmailAddress"
-    android:layout_below="@+id/email_label"
-    android:layout_centerHorizontal="true" />
 
-<!-- Button layout -->
-<Button
-    android:id="@+id/check_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/check"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_complete"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
 
-<Button
-    android:id="@+id/list_button"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/list_complete"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true" />
-
-<Button
+    <Button
     android:id="@+id/scan_button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/scan"
     android:layout_alignParentBottom="true"
-    android:layout_alignParentEnd="true" />
+    android:layout_alignParentRight="true"
+    style="@style/ScanButton"/>
 
-<!-- Feedback layout -->
-<TextView
-    android:id="@+id/scan_format"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textIsSelectable="true"
-    android:layout_centerHorizontal="true"
-    android:layout_below="@id/email_content" />
+<!--&lt;!&ndash; Feedback layout &ndash;&gt;-->
+<!--<TextView-->
+    <!--android:id="@+id/scan_format"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textIsSelectable="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_below="@id/scan_button" />-->
 
-<TextView
-    android:id="@+id/scan_content"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textIsSelectable="true"
-    android:layout_centerHorizontal="true"
-    android:layout_below="@id/scan_format" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/scan_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textIsSelectable="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_below="@id/scan_button" />-->
 
 
 

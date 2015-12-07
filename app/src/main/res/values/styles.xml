@@ -1,8 +1,29 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     </style>
 
+    <style name="WhiteText">
+        <item name="android:textColor">#222</item>
+        <item name="android:textSize">8pt</item>
+    </style>
+
+    <style name="SearchField">
+        <item name="android:background">#e7e7e7</item>
+        <item name="android:padding">20px</item>
+        <item name="android:textSize">16pt</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="ScanButton">
+        <item name="android:textSize">14pt</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="CocaTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/accent_material_light_1</item>
+    </style>
 </resources>
