@@ -7,7 +7,7 @@ public class GuestRequest {
 
     private static AsyncHttpClient client = new AsyncHttpClient();
 
-    private String baseAddress = "http://1f1e0ab0.ngrok.io";
+    private String baseAddress = "http://192.168.1.4:8089";
     private String endpoint = "/api/guests.json";
 
 

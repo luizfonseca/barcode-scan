@@ -72,11 +72,13 @@ public class BarcodeSuccessFragment extends Fragment {
 //
         String barcode = getArguments().getString("barcode");
         String group = getArguments().getString("group");
-        String checkinAt = getArguments().getString("checkinAt");
+        //String checkinAt = getArguments().getString("checkinAt");
 
         View inflatedView = inflater.inflate(R.layout.fragment_barcode_success, container, false);
 
         TextView br = (TextView) inflatedView.findViewById(R.id.barcode_result);
+        TextView gp = (TextView) inflatedView.findViewById(R.id.group_definition);
+        gp.setText("GRUPO " + group);
         br.setText("CODIGO: " + barcode);
 
         return inflatedView;

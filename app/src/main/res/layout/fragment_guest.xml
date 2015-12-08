@@ -24,6 +24,7 @@
             android:background="#fff"
             android:id="@+id/content"
             android:layout_width="300px"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:layout_marginRight="2dip"

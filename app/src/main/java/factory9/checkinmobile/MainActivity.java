@@ -25,6 +25,7 @@ import com.google.zxing.integration.android.IntentResult;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import cz.msebera.android.httpclient.Header;
@@ -132,10 +133,15 @@ public class MainActivity extends FragmentActivity
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 Log.w("HTTP/OK: ", response.toString());
+                String group = "";
 
-                //String group = response.get("group").toString();
+                try {
+                    group = response.get("group").toString();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 //String checkinAt = response.get("checkin_at").toString();
-                loadBarcodeSuccessFragment(setBundle(barcode, "", ""));
+                loadBarcodeSuccessFragment(setBundle(barcode, group, ""));
             }
 
 
